@@ -8,8 +8,8 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
 const { webp, avif, png } = generateImage(image, {
   widths,
   formats: ["webp", "avif", "png"],
-  outputDir: "public/assets/images/showcase",
-  urlPath: "/assets/images/showcase",
+  outputDir: "public/assets/images/expo",
+  urlPath: "/assets/images/expo",
 });
 
 const avifSrcset = avif.map(({ srcset }) => srcset).join(",");
@@ -17,7 +17,7 @@ const webpSrcset = webp.map(({ srcset }) => srcset).join(",");
 const pngSrcset = png.map(({ srcset }) => srcset).join(",");
 
 const placeholder = await generatePlaceholder(image, {
-  outputDir: "src/assets/placeholders/showcase",
+  outputDir: "src/assets/placeholders/expo",
 });
 ---
 

@@ -1,10 +1,10 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import ShowcaseCard from "~/components/showcase-card.astro";
-import sites from "~/data/showcase/sites.json";
+import ExpoCard from "~/components/expo-card.astro";
+import sites from "~/data/expo/sites.json";
 ---
 
-<ContentSection title="Showcase" id="showcase">
+<ContentSection title="Expo" id="expo">
   <Fragment slot="lead">
     Watheia is <span class="text-primary">versatile</span>.{" "}
     <span class="text-primary">Explore</span> what's possible and get{" "}
@@ -14,14 +14,12 @@ import sites from "~/data/showcase/sites.json";
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {
         sites.map(({ title, image, url }) => (
-          <ShowcaseCard title={title} image={image} url={url} />
+          <ExpoCard title={title} image={image} url={url} />
         ))
       }
     </div>
     <p class="text-sm text-right">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
-      </a>
+      <a class="text-primary" href="/expo/"> ...and more &rarr;</a>
     </p>
   </div>
 </ContentSection>

@@ -1,8 +1,7 @@
 ---
 import { generateImage } from "astro-eleventy-img";
-import { Icon } from "astro-icon";
-import Starfield from "~/components/starfield.astro";
 import HeroImage from "~/components/hero-image.astro";
+import Starfield from "~/components/starfield.astro";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
@@ -32,9 +31,9 @@ const pngSrcset = png.map(({ srcset }) => srcset).join(",");
       <div
         class="font-extrabold tracking-tighter text-center text-8xl gradient-text"
       >
-        Build fast
-        <br /> websites,
-        <br /> faster.
+        We build
+        <br /> micro
+        <br /> frontends!
       </div>
     </h2>
     <picture

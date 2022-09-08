@@ -1,17 +1,17 @@
 ---
-import Compatibility from "~/components/compatibility.astro";
-import Features from "~/components/features.astro";
+import About from "~/components/about.astro";
+import Expo from "~/components/expo.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
-import Showcase from "~/components/showcase.astro";
+import Services from "~/components/services.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
-  "Build fast websites, faster. Watheia is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  "Disrupt the web monolith! Develop and compose modular apps together in a fast and scalable way, with an amazing dev experience at every step.";
 ---
 
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
@@ -21,7 +21,7 @@ const description =
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <title>Watheia Landing</title>
+    <title>Watheia Labs</title>
     <meta name="description" content={description} />
 
     <!-- fonts -->
@@ -83,9 +83,9 @@ const description =
     <Splash />
     <div class="px-8 py-32 space-y-24">
       <Intro />
-      <Features />
-      <Compatibility />
-      <Showcase />
+      <About />
+      <Services />
+      <Expo />
     </div>
     <Footer />
   </body>
