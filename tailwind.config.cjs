@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        mono: ["Fira Mono", ...defaultTheme.fontFamily.mono],
+        sans: ["Fira Sans", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: "var(--color-primary)",
