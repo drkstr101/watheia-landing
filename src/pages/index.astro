@@ -18,39 +18,50 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
     <title>Watheia Labs</title>
     <meta name="description" content={description} />
 
-    <!-- fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
-      />
-    </noscript> -->
-
     <!-- social media -->
-    <meta property="og:title" content="Watheia" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    <meta property="og:url" content={site} />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="application-name" content="Watheia Labs" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Watheia Labs" />
+    <meta name="description" content="A capabilities test of the modern web" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#111" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#111" />
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <script type="application/ld+json">
+      {
+        JSON.stringify({
+          "@context": "http://schema.org",
+          "@type": "Article",
+          author: "Watheia Labs, LLC",
+          headline: "A capabilities test of the modern web",
+          description:
+            "Watheia Labs is an open-source showcase of best practices on developing modern, real-time serverless web applications.",
+          image: "https://watheia.com/logo-alt.png",
+          publisher: {
+            "@type": "Organization",
+            url: "https://watheia.com",
+            name: "Watheia",
+            logo: "https://watheia.com/icon.png",
+          },
+        });
+      }
+    </script>
 
     <!-- initialize theme -->
     <script is:inline>

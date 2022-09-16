@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Fira Mono", ...defaultTheme.fontFamily.mono],
-        sans: ["Fira Sans", ...defaultTheme.fontFamily.sans],
+        mono: ["'Fira Mono'", ...defaultTheme.fontFamily.mono],
+        sans: ["'Fira Sans'", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: "var(--color-primary)",
@@ -28,5 +28,8 @@ module.exports = {
   corePlugins: {
     fontSize: false,
   },
-  plugins: [require("tailwindcss-fluid-type")],
+  plugins: [
+    require("tailwindcss-fluid-type"),
+    require("@tailwindcss/typography"),
+  ],
 };
