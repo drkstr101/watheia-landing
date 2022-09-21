@@ -2,6 +2,7 @@
 import { getImage } from "@astrojs/image";
 import { getRelativeUrlByFilePath } from "~/utils/directories";
 
+import Fonts from "~/components/core/Fonts.astro";
 import GoogleAnalytics from "~/components/core/GoogleAnalytics.astro";
 import defaultImageSrc from "~/assets/images/icon.png";
 
@@ -65,6 +66,8 @@ const image =
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 {image && <meta name="twitter:image" content={image} />}
+
+<Fonts />
 
 <!-- LD+JSON -->
 <script type="application/ld+json">
