@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon";
 import Logo from "~/components/logo-image.astro";
-import ThemeSwitcher from "~/components/theme-switcher.astro";
+// import ThemeSwitcher from "~/components/theme-switcher.astro";
 
 const navItems = [
   { title: "Services", url: "#services" },
@@ -38,7 +38,7 @@ const navItems = [
       >
         <Icon pack="mdi" name="menu" class="h-8" />
       </button>
-      <ThemeSwitcher />
+      <!-- <ThemeSwitcher /> -->
     </div>
     <div id="menu-modal" class="hidden modal" aria-hidden="true">
       <div class="fixed inset-0 px-8 py-4 bg-default">
@@ -54,7 +54,7 @@ const navItems = [
             </button>
           </header>
           <div class="flex justify-center">
-            <Icon name="logomark" class="h-16" />
+            <Logo size="M" />
           </div>
           <nav>
             <ul class="flex flex-col">
